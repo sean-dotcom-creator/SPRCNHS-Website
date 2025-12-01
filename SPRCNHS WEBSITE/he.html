@@ -1,0 +1,403 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HE</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+     />
+
+    <style>
+        * {box-sizing: border-box;}
+        
+        body {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .topnav {
+          overflow: hidden;
+          background-color: #e9e9e9;
+        }
+        
+        .topnav a {
+          float: left;
+          display: block;
+          color: black;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        
+        .topnav a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+        
+        .topnav a.active {
+          background-color: #21f379;
+          color: white;
+        }
+        
+        .topnav .search-container {
+          float: right;
+        }
+        
+        .topnav input[type=text] {
+          position: relative;
+          top: 13px;
+          left: -28.5px;
+          padding: 16.9px;
+          margin-top: 8px;
+          font-size: 17px;
+          border: none;
+        }
+        
+        .topnav .search-container button {
+          position: relative;
+          top: -38.9px;
+          left: 25px;
+          float: right;
+          padding: 8px 10px;
+          margin-top: 8px;
+          margin-right: 16px;
+          background: #00ff22;
+          font-size: 17px;
+          border: none;
+          cursor: pointer;
+        }
+        
+        .topnav .search-container button:hover {
+          background: #48ff00;
+        }
+        
+        @media screen and (max-width: 600px) {
+          .topnav .search-container {
+            float: none;
+          }
+          .topnav a, .topnav input[type=text], .topnav .search-container button {
+            position: relative;
+            top: -113px;
+            left: 420px;
+            float: none;
+            display: block;
+            text-align: left;
+            width: 65%;
+            margin: 0;
+            padding: 10px 16px;
+          }
+          .topnav a, .topnav input[type=text]{
+            position: relative;
+            top: -72px;
+            left: 371px;
+            float: none;
+            display: block;
+            text-align: left;
+            width: 65%;
+            margin: 0;
+            padding: 20px 16px;
+          }
+          .topnav input[type=text] {
+            border: 1px solid #ccc;  
+          }
+        }
+        </style>
+</head>
+<body>
+        <!-- Navbar Section -->
+        <nav class="navbar">
+            <div class="navbar__container">
+              <img src="img/sprcnhs.png" class="navbar__logos"/>
+              <a href="/" id="navbar__logo">Home Economics</a>
+              <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+              </div>
+              <ul class="navbar__menu">
+      
+                <div class="topnav">
+                  <div class="search-container">
+                    <form action="/action_page.php">
+                      <input type="text" placeholder="Search.." name="search">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                  </div>
+                </div>
+      
+                <li class="navbar__item">
+                  <a href="index.html" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                <a href="ict.html" class="navbar__links">ICT</a>
+                </li>
+                <li class="navbar__item">
+                  <a href="ia.html" class="navbar__links">IA</a>
+                </li>
+                <li class="navbar__item">
+                  <a href="he.html"  class="color">HE</a>
+                </li>
+                <li class="navbar__btn">
+                  <button onclick="document.getElementById('id01')
+                  .style.display='block'" style="width:100px;" class="button" >Sign Up</button>
+      
+               <div id="id01" class="modal">
+        
+               <form class="modal-content animate" action="/action_page.php" method="post">
+               <div class="imgcontainer">
+               <span onclick="document.getElementById('id01').style.display='none'" 
+               class="close" title="Close Modal" >&times;</span>
+               <img src="images/profile.jpg" alt="Avatar" class="avatar">
+               </div>
+      
+               <div class="container">
+               <label for="uname"><b>Username</b></label>
+               <input type="text" placeholder="Enter Username" name="uname" required>
+      
+               <label for="psw"><b>Password</b></label>
+               <input type="password" placeholder="Enter Password" name="psw" required>
+              
+               <button type="submit" class="button">Login</button>
+               <label>
+               <input type="checkbox" checked="checked" name="remember"> Remember me
+               </label>
+               </div>
+      
+                <div class="container" style="background-color: #8cfc8c;">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+                </form>
+                </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+              <!--hero section-->
+          <div class="main">
+          <div class="main__container">
+            <h1 class="j">Junior High School</h1>
+          <br>
+          <div class="main__content">
+            <h1>FOOD TECHNOLOGY </h1>
+            <p>Introduces students to the basics of food processing, preservation, and preparation.</p>
+            <button class="main__btn"><a href="enroll.html">ENROLL now?</a></button>
+          </div>
+          <div class="main__img-container">
+            <img id="main__img2" src="img/automotive.jpg" />
+          </div>
+          </div>
+          </div>
+          <br>
+          <div class="main">
+          <div class="main__container">
+          <div class="main__content">
+            <h1>GARMENTS TECHNOLOGY</h1>
+            <p>Teaches students the fundamentals <br> of garment construction, textiles, <br> and fashion design</p>
+            <button class="main__btn"><a href="enroll.html">ENROLL now?</a></button>
+          </div>
+          <div class="main__img-container">
+            <img id="main__img2" src="img/garments.jfif" />
+          </div>
+          </div>
+          </div>
+          <br>
+          <div class="main">
+          <div class="main__container">
+          <div class="main__content">
+            <h1>COSMETOLOGY</h1>
+            <p>Covers the basics of hair care, <br> skincare, and makeup.</p>
+            <button class="main__btn"><a href="enroll.html">ENROLL now?</a></button>
+          </div>
+          <div class="main__img-container">
+            <img id="main__img2" src="img/cos.jfif" />
+          </div>
+          </div>
+          </div>
+          <br>
+          <div class="main">
+          <div class="main__container">
+            <h1 class="s">Senior High School</h1>
+          <br>
+          <div class="main__content">
+            <h1>COOKERY NC II</h1>
+            <p>Provides training in cooking <br> techniques, meal planning, <br> and food safety.</p>
+            <button class="main__btn"><a href="enroll.html">ENROLL now?</a></button>
+          </div>
+          <div class="main__img-container">
+            <img id="main__img2" src="img/Freetime.jpg" />
+          </div>
+          </div>
+          </div>
+          <br>
+          <div class="main">
+          <div class="main__container">
+          <div class="main__content">
+            <h1>BREAD & PASTRY PRODUCTION <br> NC II</h1>
+            <p>Focuses on the production of bread <br> and pastry products, including recipe development and quality control.</p>
+            <button class="main__btn"><a href="enroll.html">ENROLL now?</a></button>
+          </div>
+          <div class="main__img-container">
+            <img id="main__img2" src="img/bread.jpg" />
+          </div>
+          </div>
+          </div>          
+          <br>
+          <div class="main">
+          <div class="main__container">
+          <div class="main__content">
+            <h1>FOOD & BEVERAGE SERVICES NC II</h1>
+            <p> Covers the skills and knowledge required to provide excellent food <br> and beverage service to customers</p>
+            <button class="main__btn"><a href="enroll.html">ENROLL now?</a></button>
+          </div>
+          <div class="main__img-container">
+            <img id="main__img2" src="img/bevarge.jpg" />
+          </div>
+          </div>
+          </div>          
+          <br>
+          <div class="main">
+          <div class="main__container">
+          <div class="main__content">
+            <h1>HOUSEKEEPING NC II </h1>
+            <p>Teaches students the skills and knowledge required to maintain <br> a clean and organized environment <br> in various settings.</p>
+            <button class="main__btn"><a href="enroll.html">ENROLL now?</a></button>
+          </div>
+          <div class="main__img-container">
+            <img id="main__img2" src="img/cos.jfif" />
+          </div>
+          </div>
+          </div>          
+          <br>
+          <div class="main">
+          <div class="main__container">
+          <div class="main__content">
+            <h1>BARTENDING <br> NC II</h1>
+            <p>Covers the skills and knowledge required to prepare and serve beverages in a bar setting.</p>
+            <button class="main__btn"><a href="enroll.html">ENROLL now?</a></button>
+          </div>
+          <div class="main__img-container">
+            <img id="main__img2" src="img/bevarge.jpg" />
+          </div>
+          </div>
+          </div>          
+          <br>
+          <div class="main">
+          <div class="main__container">
+          <div class="main__content">
+            <h1>HAIR DRESSING NC II </h1>
+            <p>Teaches students the skills and knowledge required to cut, color, <br> and style hair</p>
+            <button class="main__btn"><a href="enroll.html">ENROLL now?</a></button>
+          </div>
+          <div class="main__img-container">
+            <img id="main__img2" src="img/garments.jfif" />
+          </div>
+          </div>
+          </div>          
+          <br>
+          <div class="main">
+          <div class="main__container">
+          <div class="main__content">
+            <h1>FASHION <br> DESIGN NC III </h1>
+            <p>Covers the skills and knowledge required to design and create <br> clothing and accessories.</p>
+            <button class="main__btn"><a href="enroll.html">ENROLL now?</a></button>
+          </div>
+          <div class="main__img-container">
+            <img id="main__img2" src="img/garments.jfif" />
+          </div>
+          </div>
+          </div>
+          
+  
+      <div class="footer__container">
+        <div class="footer__links">
+          <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+              <h2>About Us</h2>
+              <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
+              <a href="/">Careers</a> <a href="/">Investments</a>
+              <a href="/">Terms of Service</a>
+            </div>
+            <div class="footer__link--items">
+              <h2>Contact Us</h2>
+              <a href="/">Contact</a> <a href="/">Support</a>
+              <a href="/">Destinations</a> <a href="/">Sponsorships</a>
+            </div>
+          </div>
+          <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+              <h2>TVE</h2>
+              <a href="/">HE</a> <a href="/">ICT</a>
+              <a href="/">IA</a> 
+            </div>
+            <div class="footer__link--items">
+              <h2>Social Media</h2>
+              <a href="/">Instagram</a> <a href="https://www.facebook.com/SSGSPRCNHS">Facebook-SPRCNHS</a>
+              <a href="/">Youtube</a> <a href="/">Twitter</a>
+            </div>
+          </div>
+        </div>
+        <section class="social__media">
+          <div class="social__media--wrap">
+            <div class="footer__logo">
+              <a href="/" id="footer__logo"><img src="img/sprcnhs.png" class="footer__logos2"/>Home Economics</a>
+            </div>
+            <p class="website__rights">© SPRCNHS 2025. All rights reserved</p>
+            <div class="social__icons">
+              <a
+                class="social__icon--link"
+                href="https://www.facebook.com/SSGSPRCNHS"
+                target="_blank"
+                aria-label="Facebook"
+              >
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a
+                class="social__icon--link"
+                href="/"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                class="social__icon--link"
+                href="//www.youtube.com/channel/UCsKsymTY_4BYR-wytLjex7A?view_as=subscriber"
+                target="_blank"
+                aria-label="Youtube"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a
+                class="social__icon--link"
+                href="/"
+                target="_blank"
+                aria-label="Twitter"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                class="social__icon--link"
+                href="/"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <script src="app.js"></script>
+    </body>
+  </html>
+</body>
+</html>

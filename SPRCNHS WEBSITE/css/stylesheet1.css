@@ -1,0 +1,194 @@
+body{
+  height: 98.3vh;
+  width: 50vw;
+  background: linear-gradient(45deg, #3E6CE7, #07F9C5);
+}
+
+.main__btn {
+  font-size: 1rem;
+  background-image: linear-gradient(to top, #8cfc8c 0%, #f0e6e3 100%);
+  padding: 14px 32px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  top: -32px;
+  transition: all 0.35s;
+  outline: none;
+}
+
+.main__btn a {
+  position: relative;
+  z-index: 2;
+  background-image: linear-gradient(to top, #2415f5de 0%, #fcd5c9 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.main__btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-image: linear-gradient(to top, #29f829 0%, #fcd5c9 100%);
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.main__btn:hover {
+  color: #fff;
+}
+
+.main__btn:hover:after {
+  width: 100%;
+}
+
+
+.square{
+    height: 50vh;
+    width: 35vh;
+    position: absolute;
+    left: 25vh;
+    top: 15vh;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 10%;
+    transform: rotate(-15deg);
+    box-shadow: 15px 15px #4B4E4F;
+}
+.square2{
+    height: 50vh;
+    width: 35vh;
+    position: absolute;
+    left: 130vh;
+    top: 15vh;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 10%;
+    transform: rotate(15deg);
+    box-shadow: 15px 15px #4B4E4F;
+}
+.gun{
+  position: absolute;
+  left: 80vh;
+  top: 80vh;
+}
+@keyframes FadeInOut {
+  0% {opacity:1;}
+  25% {opacity:.75;}
+  50% {opacity:.5;}
+  100% {opacity:0;}
+}
+#fading img {
+position:absolute;
+left:0;
+}
+#fading img.one {
+animation-name: FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 2s;
+animation-direction: alternate;
+height: 30vh;
+width: 30vh;
+position: absolute;
+left: 25.9vh;
+top: 18vh;
+transform: rotate(-15deg);
+border: 5px solid black;
+border-radius: 10%;
+}
+#fading img.two {
+animation-name: FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 1.9s;
+animation-direction: alternate;
+height: 30vh;
+width: 30vh;
+position: absolute;
+left: 25.9vh;
+top: 18vh;
+transform: rotate(-15deg);
+border: 5px solid black;
+border-radius: 10%;
+}
+#fading img.three {
+
+animation-name: FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 1s;
+animation-direction: alternate;
+height: 30vh;
+width: 30vh;
+position: absolute;
+left: 25.9vh;
+top: 18vh;
+transform: rotate(-15deg);
+border: 5px solid black;
+border-radius: 10%;
+}
+@keyframes FadeInOut {
+  0% {opacity:1;}
+  25% {opacity:.75;}
+  50% {opacity:.5;}
+  100% {opacity:0;}
+}
+#fading2 img {
+position:absolute;
+left:0;
+}
+#fading2 img.ones {
+animation-name: FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 2s;
+animation-direction: alternate;
+height: 30vh;
+width: 30vh;
+position: absolute;
+left: 134vh;
+top: 18vh;
+transform: rotate(15deg);
+border: 5px solid black;
+border-radius: 10%;
+}
+#fading2 img.twos {
+animation-name: FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 1.9s;
+animation-direction: alternate;
+height: 30vh;
+width: 30vh;
+position: absolute;
+left: 134vh;
+top: 18vh;
+transform: rotate(15deg);
+border: 5px solid black;
+border-radius: 10%;
+}
+#fading2 img.threes {
+animation-name: FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 1s;
+animation-direction: alternate;
+height: 30vh;
+width: 30vh;
+position: absolute;
+left: 134vh;
+top: 18vh;
+transform: rotate(15deg);
+border: 5px solid black;
+border-radius: 10%;
+}
